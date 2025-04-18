@@ -13,12 +13,12 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * No es necesario almacenarla en un paquete, lo realizé para mayor compreensión de la arquitectura de Spring
  * Obtiene datos de tipo entidad
  */
-@SpringBootApplication //<-- Importante ver como Spring ya la maneja como aplicación
+//Comentando, desactivamos la activación con Spring
+//@SpringBootApplication //<-- Importante ver como Spring ya la maneja como aplicación
 public class ZonaFitApplication implements CommandLineRunner {
-	@Autowired
+	//@Autowired
 	private IClienteServicio clienteServicio;
 
 	private static final Logger logger = LoggerFactory.getLogger(ZonaFitApplication.class);
